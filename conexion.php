@@ -9,7 +9,7 @@ class BD{
         if(!isset( self::$instancia)){
 
             $opcionesPDO[PDO::ATTR_ERRMODE]= PDO::ERRMODE_EXCEPTION;
-             self::$instancia= new PDO('mysql:host=192.168.1.71;dbname=empleados','samsung','', $opcionesPDO);
+             self::$instancia= new PDO('mysql:host=localhost;dbname=empleados','server','', $opcionesPDO);
           
         }
         return self::$instancia;
